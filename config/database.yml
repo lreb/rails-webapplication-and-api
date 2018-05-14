@@ -17,6 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  prepared_statements: false
   database: myapp_development
   username: <%= ENV["POSTGRESQL_USER"] %> 
   password: <%= ENV["POSTGRESQL_PASSWORD"] %>
